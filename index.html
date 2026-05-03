@@ -103,13 +103,6 @@
             max-width: 80%;
         }
         
-        .hero-text h2 {
-            color: var(--accent-color);
-            border: none;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        
         main {
             max-width: 1200px;
             margin: 0 auto;
@@ -119,48 +112,48 @@
         section {
             margin-bottom: 3rem;
             background: var(--section-bg);
-            padding: 2rem;
+            padding: 2.5rem;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            overflow: hidden;
         }
         
         h2 {
             color: var(--primary-color);
             font-family: 'Roboto', sans-serif;
-            font-weight: 700;
             border-bottom: 2px solid var(--accent-color);
             padding-bottom: 0.5rem;
         }
+
+        h3 { color: var(--secondary-color); margin-top: 1.5rem; }
         
         .about-image {
             float: right;
             margin: 0 0 20px 20px;
             max-width: 300px;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         
         .research-interests {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             gap: 1rem;
-            padding: 0;
             list-style: none;
+            padding: 0;
         }
         
         .research-interests li {
             background: var(--primary-color);
             color: white;
-            padding: 0.5rem 1rem;
+            padding: 0.5rem;
             border-radius: 5px;
             text-align: center;
+            font-size: 0.9rem;
         }
-        
+
         .photo-gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            gap: 1.5rem;
         }
 
         .photo-gallery figure {
@@ -168,63 +161,58 @@
             position: relative;
             overflow: hidden;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
         .photo-gallery img {
             width: 100%;
-            height: 300px;
+            height: 250px;
             object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-
-        .photo-gallery figure:hover img {
-            transform: scale(1.05);
+            transition: 0.3s;
         }
 
         .photo-gallery figcaption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(26, 95, 122, 0.8);
+            background: rgba(26, 95, 122, 0.9);
             color: white;
-            padding: 1rem;
+            padding: 0.5rem;
             text-align: center;
         }
 
         .conference-item {
             display: flex;
-            align-items: center;
-            gap: 2rem;
+            gap: 20px;
             margin-bottom: 2rem;
+            align-items: flex-start;
         }
 
         .conference-image {
             width: 200px;
-            height: auto;
-            border-radius: 5px;
+            border-radius: 8px;
         }
-        
+
         .social-links {
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 1rem;
+            gap: 15px;
+            margin-top: 20px;
         }
-        
+
         .social-links a {
-            color: var(--primary-color);
             text-decoration: none;
+            color: var(--primary-color);
             font-weight: bold;
+            border: 1px solid var(--primary-color);
+            padding: 5px 10px;
+            border-radius: 5px;
         }
-        
+
+        .social-links a:hover { background: var(--primary-color); color: white; }
+
         footer {
             background: var(--primary-color);
             color: white;
             text-align: center;
-            padding: 2rem 0;
-            margin-top: 2rem;
+            padding: 2rem;
+            margin-top: 3rem;
         }
 
         @media (max-width: 768px) {
@@ -264,27 +252,34 @@
     </div>
 
     <main>
+        <!-- LATEST NEWS -->
         <section id="latest-news">
             <h2>Check the Latest News</h2>
-            <div class="news-content">
-                <p>Bhuwan is attending "Bioinformatics Analysis for Conservation Genomics" with Dr. Klaus Koepfli from October 8–19, 2024 at SMSC, George Mason University, USA.</p>
-                <img src="images/Screenshot (244).png" alt="Bioinformatics Training" style="max-width:100%; border-radius:10px;">
+            <div class="news-content" style="text-align:center;">
+                <p>Bhuwan is attending "Bioinformatics Analysis for Conservation Genomics" with Dr. Klaus Koepfli from October 8–19, 2024 at Smithsonian Mason School of Conservation (SMSC), George Mason University, Front Royal, Virginia, USA.</p>
+                <img src="images/Screenshot (244).png" alt="Bioinformatics Training" style="max-width:100%; border-radius:10px; margin-top:15px;">
             </div>
         </section>
 
+        <!-- ABOUT -->
         <section id="about">
             <img src="images/AboutMe.jpg" alt="About Me" class="about-image">
             <h2>About Me</h2>
-            <p>I am a PhD student in Dr. Tereza Jezkova's lab at Miami University. My research focuses on conservation genomics, phylogenomics, and molecular evolution, utilizing bioinformatics and genomic tools to explore evolutionary processes.</p>
+            <p>I am a PhD student in Dr. Tereza Jezkova's lab at Miami University. My research focuses on conservation genomics, phylogenomics, and molecular evolution, utilizing bioinformatics and genomic tools to explore evolutionary processes. I am passionate about studying local adaptation, species delimitation, population genomics, and range expansion, with an emphasis on understanding the mechanisms driving biological diversity.</p>
             <h3>Education</h3>
             <ul>
-                <li><strong>Ph.D. in Ecology, Evolution, and Environmental Biology (2022 - 2027)</strong><br>Miami University, Ohio, USA</li>
-                <li><strong>M.Sc. in Wildlife Management (2019 - 2022)</strong><br>Tribhuvan University, Nepal</li>
+                <li><strong>Ph.D. in Ecology, Evolution, and Environmental Biology (2022 - 2027)</strong><br>Miami University, Oxford, Ohio, USA</li>
+                <li><strong>M.Sc. in Wildlife Management and Biodiversity Conservation (2019 - 2022)</strong><br>Institute of Forestry, Tribhuvan University, Nepal</li>
+                <li><strong>B.Sc. in Forestry (2015 - 2019)</strong><br>Institute of Forestry, Pokhara Campus, Nepal</li>
             </ul>
         </section>
 
+        <!-- RESEARCH -->
         <section id="research">
-            <h2>Research Interests</h2>
+            <h2>Research</h2>
+            <p>My goal is to understand how various interacting factors influence and drive genomic and ecological variation in organisms. To investigate these topics, I employ a range of bioinformatics techniques, including next-generation sequencing methods such as Sanger sequencing, ddRAD sequencing, and whole genome sequencing.</p>
+            
+            <h3>Research Interests</h3>
             <ul class="research-interests">
                 <li>Artificial Intelligence in Genomics</li>
                 <li>Local Adaptation</li>
@@ -292,39 +287,106 @@
                 <li>Bioinformatics</li>
                 <li>Population Genomics</li>
                 <li>Species Delimitation</li>
+                <li>Range Expansion</li>
+                <li>Comparative Genomics</li>
+                <li>Ecological Niche Modelling</li>
+            </ul>
+            
+            <h3>Current Projects</h3>
+            <ul>
+                <li>Local adaptation in invasive nine-banded armadillo in eastern United States.</li>
+                <li>Phylogenomics of Asian tree squirrel complex in SouthEast Asia.</li>
             </ul>
         </section>
 
+        <!-- COLLABORATION -->
+        <section id="collaboration">
+            <h2>Collaboration</h2>
+            <h3>Open to Collaboration</h3>
+            <p>I am open to collaborating on any genomic projects prioritizing mammals followed by birds, reptiles, and amphibians.</p>
+            <h3>Collaborative Projects</h3>
+            <p>Species delimitation of the armadillo in Ecuador, South America.</p>
+        </section>
+
+        <!-- PUBLICATIONS -->
         <section id="publications">
             <h2>Publications</h2>
             <ul>
-                <li>2021: <strong>Bist, B.S</strong>. et al. From extinction to recovery: the case of blackbuck from Nepal. <em>Mammal Research</em>.</li>
-                <li>2021: <strong>Bist, B.S</strong>. et al. Patterns and trends in Nepal's mammalian fauna. <em>Biodiversity and Conservation</em>.</li>
+                <li>2021: <strong>Bist, B.S.</strong>, et al. From extinction to recovery: the case of blackbuck Antilope cervicapra from Nepal. <em>Mammal Research</em>. https://doi.org/10.1007/s13364-021-00576-5</li>
+                <li>2021: <strong>Bist, B.S.</strong>, et al. Patterns and trends in two decades of research on Nepal's mammalian fauna (2000-2019). <em>Biodiversity and Conservation</em>.</li>
+                <li>2021: Baral, B, et al. New Locality record of Crab-eating Mongoose from Parbat district of Nepal. <em>Nepalese Journal of Zoology</em>.</li>
+                <li>2021: <strong>Bist, B.S.</strong>, et al. Latrine site and its use pattern by Large Indian Civet. <em>Journal of Threatened Taxa</em>.</li>
+                <li>2020: Basnet, A, et al. Otter research in Asia: Trends biases and future directions. <em>Global Ecology and Conservation</em>.</li>
+                <li>2020: Parajuli, A, et al. Forest Fire Risk Mapping Using GIS and Remote Sensing in Nepal. <em>Geomatics, Natural Hazards and Risk</em>.</li>
             </ul>
         </section>
 
-        <section id="photography">
-            <h2>Photography</h2>
-            <div class="photo-gallery">
-                <figure>
-                    <img src="images/Elephant (2).jpg" alt="Asian elephant">
-                    <figcaption>Asian elephant</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/Good_rhino.jpg" alt="Rhinoceros">
-                    <figcaption>One-horned rhinoceros</figcaption>
-                </figure>
+        <!-- CONFERENCES -->
+        <section id="conferences">
+            <h2>Conferences & Workshop</h2>
+            <div class="conference-item">
+                <img src="images/450099017_2761264920704579_7032847670285988827_n.jpg" alt="ASM Meeting" class="conference-image">
+                <div>
+                    <h3>American Society of Mammalogists 103rd Annual Meeting</h3>
+                    <p>Bhuwan presented a poster on the "Evolutionary History of an Asian Tree Squirrel Species Complex" in Boulder, Colorado, June 2024.</p>
+                </div>
+            </div>
+            <div class="conference-item">
+                <img src="images/Armadillo_Fancy_photo.jpg" alt="Armadillo" class="conference-image">
+                <div>
+                    <h3>Upcoming Presentation at Miami University</h3>
+                    <p>Presentation: "Genome-wide variation and signals of selection highlight the range expansion of the invasive nine-banded armadillo" on November 1, 2024.</p>
+                </div>
             </div>
         </section>
 
+        <!-- OUTREACH -->
+        <section id="outreach">
+            <h2>Outreach</h2>
+            <p>I advocate for wildlife through scientific and newspaper articles:</p>
+            <ol>
+                <li><a href="https://www.thetrickyscribe.com/attention-required-rusty-spotted-cat/" target="_blank">Attention Required: Rusty Spotted Cat</a></li>
+                <li><a href="https://english.onlinekhabar.com/climate-change-impact-on-nepal-wildlife.html" target="_blank">Climate Change Impact on Nepal Wildlife</a></li>
+                <li><a href="https://thetrickyscribe.com/changing-climate-in-hindu-kush-himalayas/" target="_blank">Changing Climate in Hindu Kush Himalayas</a></li>
+            </ol>
+            <p>I have trained over 500 students in biodiversity conservation and ecological monitoring techniques.</p>
+            <div style="text-align:center; margin-top:20px;">
+                <img src="images/286413037_2200822113415532_8014874286520678958_n.jpg" alt="Outreach" style="max-width:300px; border-radius:10px;">
+            </div>
+        </section>
+
+        <!-- BOOKS -->
+        <section id="books">
+            <h2>Books</h2>
+            <div style="text-align:center;">
+                <img src="images/WildlifeConservationandProtectedAreaManagement-images-1.jpg" alt="Wildlife Book" style="max-width:250px; border-radius:10px;">
+            </div>
+        </section>
+
+        <!-- PHOTOGRAPHY -->
+        <section id="photography">
+            <h2>Photography</h2>
+            <p>Capturing images of wildlife and nature during my research expeditions.</p>
+            <div class="photo-gallery">
+                <figure><img src="images/Elephant (2).jpg" alt="Asian elephant"><figcaption>Asian elephant</figcaption></figure>
+                <figure><img src="images/Good_rhino.jpg" alt="Rhino"><figcaption>Greater one-horned rhinoceros</figcaption></figure>
+                <figure><img src="images/IMG_4467.JPG" alt="Blackbuck"><figcaption>Blackbuck</figcaption></figure>
+                <figure><img src="images/194298867_1918847501612996_1685321922935367219_n.jpg" alt="Langur"><figcaption>Himalayan gray langur</figcaption></figure>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
         <section id="contact">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:bhuwansinghbist38@gmail.com">bhuwansinghbist38@gmail.com</a></p>
             <div class="social-links">
-                <a href="https://scholar.google.com/citations?user=oOkeXAcAAAAJ&hl=en">Google Scholar</a>
-                <a href="https://www.linkedin.com/in/bhuwan-singh-bist-70930810b/">LinkedIn</a>
-                <a href="https://github.com/Genomics-Bhuwan">GitHub</a>
+                <a href="https://github.com/Genomics-Bhuwan" target="_blank">GitHub</a>
+                <a href="https://scholar.google.com/citations?user=oOkeXAcAAAAJ&hl=en" target="_blank">Google Scholar</a>
+                <a href="https://www.linkedin.com/in/bhuwan-singh-bist-70930810b/" target="_blank">LinkedIn</a>
+                <a href="https://www.researchgate.net/profile/Bhuwan-Bist" target="_blank">ResearchGate</a>
+                <a href="https://x.com/Bhuwan_S_Bist" target="_blank">Twitter</a>
             </div>
+            <p style="margin-top:20px;">I am open to talking about wildlife ecology, biogeography, sports, or anything outside of academia!</p>
         </section>
     </main>
 
